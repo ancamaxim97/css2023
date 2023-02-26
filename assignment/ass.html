@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<ht lang="en">
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:#050210 ;
+        }
+
+        .box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 150px;
+            height: 150px;
+            background-color: #050210;
+            transform: translate(-50%, -50%);
+        }
+        .unu{
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            filter: blur(50px);
+            animation: animate 1s linear infinite;
+        }
+            
+        
+        .doi{
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+            border-radius: 50%;
+            animation: animate 1s linear infinite;
+        }
+        .trei{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #050210;
+            border-radius: 50%;
+        }
+        @keyframes animate {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+
+        }
+    </style>
+
+    <body>
+        <div class="box">
+            <div class="unu"></div>
+            <div class="doi"></div>
+            <div class="trei"></div>
+        </div>
+
+    </body>
+
+    </html>
